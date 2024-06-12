@@ -1,19 +1,20 @@
-<header>
+<!-- <header>
 	<nav class="navbar navbar-expand-sm navbar-light p-0 h-100">
 		<div class="carousel-item">
-			<img src="Prajaahar Rakshak logo1.jpg" class="d-block w-100" alt="...">
+			
 		</div>
 		<div class="container-fluid p-0">
-			<a class="navbar-brand text-white ps-2" href="/">Prajaahar Rakshak</a>
+			
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span><i class="fas fa-bars text-white"></i></span>
 			</button>
-			<div class="collapse navbar-collapse ps-2" id="navbarSupportedContent" style="z-index: 100;">
+			 <div class="collapse navbar-collapse ps-2" id="navbarSupportedContent" style="z-index: 100;"
 				<ul class="navbar-nav ms-auto me-3">
-					<li class="nav-item"><a class="nav-link" href="/home/about-us">About us</a></li>
-					<li class="nav-item"><a class="nav-link" href="/home/mission">Our mission</a></li>
-					<li class="nav-item"><a class="nav-link" href="/home/contact-us">Contact us</a></li>
+					<li class="nav-item"><a class="nav-link" href="/home/about-us"><b>About us</b></a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="/home/mission"><b>Our mission</b></a></li>
+					<li class="nav-item"><a class="nav-link" href="/home/contact-us"><b>Contact us</b></a></li>
 					<% if(currentUser) { %>
 						<li class="user-icon"><%= currentUser.firstName[0] %></li>
 					<% } else { %>
@@ -24,4 +25,29 @@
 			</div>
 		</div>
 	</nav>
+</header> -->
+
+
+<header>
+	<div>
+<ul class="nav nav-pills nav-fill">
+	<li class="nav-item">
+	  <a class="nav-link" href="/home/about-us">About Us</a>
+	  <FontAwesomeIcon icon="fa-solid fa-address-card" />
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link" href="/home/mission">Our mission</a>
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link" href="/home/contact-us">Contact us</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/auth/login">Login</a>
+	  </li>
+	<li class="nav-item">
+	  <a class="nav-link disabled" href="/auth/signup" tabindex="-1" aria-disabled="true">Signup</a>
+	</li>
+  </ul>
+  </div> 
+  
 </header>
